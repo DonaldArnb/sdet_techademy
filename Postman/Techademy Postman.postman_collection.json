@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "e32c2c89-c8b2-41ab-8378-e2e3a5781ee6",
+		"name": "Techademy Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Techademy_PostmanTests_Q8",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"/*Neutral Tests*/",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"}); //Test result based on response time",
+									"",
+									"/*Positive Tests*/",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});//Positive Status code test",
+									"",
+									"",
+									"pm.test(\"Status code is not 404\", function () {",
+									"    pm.response.to.not.have.status(404);",
+									"});//Positive Status code test",
+									"",
+									"pm.test(\"Negative tests on status codes\", function () {",
+									"    pm.expect(pm.response.code).not.to.be.oneOf([201,202,404,400]);",
+									"});// This test should pass",
+									"",
+									"",
+									"pm.test(\"Testing country values\", function () {",
+									"",
+									"    result = false;",
+									"    var arr = [\"India\", \"भारत\", \"New Delhi\"];",
+									"    responseText = pm.response.text();",
+									"",
+									"    arr.forEach((x) => {",
+									"      if (responseText.includes(x)){",
+									"      result = true;",
+									"    }",
+									"",
+									"    pm.expect(result).to.be.true;",
+									"    });",
+									"});// This test should pass",
+									"",
+									"",
+									"/*Negative Tests*/",
+									"pm.test(\"Successful GET request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});// This test should fail",
+									"",
+									"",
+									"pm.test(\"Wrong Test Country\", function () {",
+									"",
+									"    result = false;",
+									"    var arr = [\"England\"];",
+									"    responseText = pm.response.text();",
+									"",
+									"    arr.forEach((x) => {",
+									"      if (responseText.includes(x)){",
+									"      result = true;",
+									"    }",
+									"",
+									"    pm.expect(result).to.be.true;",
+									"    });",
+									"});// This test should fail",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://restcountries.com/v3.1/name/india",
+							"protocol": "https",
+							"host": [
+								"restcountries",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"name",
+								"india"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"console.log(\"Hello\");",
+					"let urlval= pm.variables.get(\"base url\");",
+					"console.log(\"Value of base url is \" + urlval);",
+					"let globalval=  pm.globals.get(\"Env\");",
+					"console.log(\"Global env is \" + globalval);",
+					"",
+					"pm.environment.get();"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base url",
+			"value": "https://reqres.in"
+		}
+	]
+}
