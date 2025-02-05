@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-05T03:24:57 GMT" name="Techademy Tests" finished-at="2025-02-05T03:25:12 GMT" duration-ms="15410">
+    <groups>
+    </groups>
+    <test started-at="2025-02-05T03:24:57 GMT" name="Test" finished-at="2025-02-05T03:25:12 GMT" duration-ms="15410">
+      <class name="com.techademy.maven.testng.techademy_assignment.AutomationAnywhere">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:24:54 GMT" name="setup" finished-at="2025-02-05T03:24:57 GMT" duration-ms="2960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="profileSetup()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:24:57 GMT" name="profileSetup" finished-at="2025-02-05T03:24:57 GMT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileSetup -->
+        <test-method is-config="true" signature="appSetup()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:24:57 GMT" name="appSetup" finished-at="2025-02-05T03:25:00 GMT" duration-ms="2990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appSetup -->
+        <test-method signature="validate_presence_of_logo()[pri:1, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:00 GMT" name="validate_presence_of_logo" finished-at="2025-02-05T03:25:01 GMT" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_presence_of_logo -->
+        <test-method signature="validate_RequestDemo()[pri:2, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:01 GMT" name="validate_RequestDemo" finished-at="2025-02-05T03:25:01 GMT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_RequestDemo -->
+        <test-method signature="validate_Products()[pri:3, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:01 GMT" name="validate_Products" finished-at="2025-02-05T03:25:04 GMT" duration-ms="2663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Products -->
+        <test-method signature="validate_Solutions()[pri:4, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:04 GMT" name="validate_Solutions" finished-at="2025-02-05T03:25:07 GMT" duration-ms="2507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Solutions -->
+        <test-method signature="validate_Resources()[pri:5, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:07 GMT" name="validate_Resources" finished-at="2025-02-05T03:25:10 GMT" duration-ms="2898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Resources -->
+        <test-method signature="validate_Company()[pri:6, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:10 GMT" name="validate_Company" finished-at="2025-02-05T03:25:12 GMT" duration-ms="2479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Company -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:12 GMT" name="closeUp" finished-at="2025-02-05T03:25:12 GMT" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+      </class> <!-- com.techademy.maven.testng.techademy_assignment.AutomationAnywhere -->
+    </test> <!-- Test -->
+  </suite> <!-- Techademy Tests -->
+</testng-results>
