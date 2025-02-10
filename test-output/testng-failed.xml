@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Techademy Tests]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.techademy.maven.testng.techademy_assignment.AutomationAnywhere">
+      <class name="com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest">
         <methods>
-          <include name="validate_Resources"/>
-          <include name="setup"/>
-          <include name="validate_presence_of_logo"/>
-          <include name="validate_Products"/>
-          <include name="closeUp"/>
-          <include name="validate_RequestDemo"/>
-          <include name="validate_Company"/>
-          <include name="validate_Solutions"/>
-          <include name="appSetup"/>
-          <include name="profileSetup"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.techademy.maven.testng.techademy_assignment.AutomationAnywhere -->
+      </class> <!-- com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Techademy Tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

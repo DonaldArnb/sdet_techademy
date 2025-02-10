@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.techademy.maven.testng.techademy_assignment.LogoValidation">
+      <class name="com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest">
         <methods>
-          <include name="setup"/>
-          <include name="closeUp"/>
-          <include name="appSetup"/>
-          <include name="profileSetup"/>
-          <include name="validate_BeyondRPA"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.techademy.maven.testng.techademy_assignment.LogoValidation -->
+      </class> <!-- com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

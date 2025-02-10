@@ -1,53 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-05T03:24:57 GMT" name="Techademy Tests" finished-at="2025-02-05T03:25:12 GMT" duration-ms="15410">
+  <suite started-at="2025-02-10T04:08:33 GMT" name="Default suite" finished-at="2025-02-10T04:08:49 GMT" duration-ms="16242">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-05T03:24:57 GMT" name="Test" finished-at="2025-02-05T03:25:12 GMT" duration-ms="15410">
-      <class name="com.techademy.maven.testng.techademy_assignment.AutomationAnywhere">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:24:54 GMT" name="setup" finished-at="2025-02-05T03:24:57 GMT" duration-ms="2960" status="PASS">
+    <test started-at="2025-02-10T04:08:33 GMT" name="Default test" finished-at="2025-02-10T04:08:49 GMT" duration-ms="16242">
+      <class name="com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" started-at="2025-02-10T04:08:33 GMT" name="setUpClass" finished-at="2025-02-10T04:08:34 GMT" duration-ms="299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7ceb4478]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="profileSetup()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:24:57 GMT" name="profileSetup" finished-at="2025-02-05T03:24:57 GMT" duration-ms="71" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" started-at="2025-02-10T04:08:34 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T04:08:37 GMT" duration-ms="3865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate title of the page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to the given website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profileSetup -->
-        <test-method is-config="true" signature="appSetup()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:24:57 GMT" name="appSetup" finished-at="2025-02-05T03:25:00 GMT" duration-ms="2990" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" started-at="2025-02-10T04:08:37 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T04:08:40 GMT" duration-ms="2972" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate A/B Testing Link works fine"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to the given website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.techademy.maven.testng.techademy_assignment.definitions.PageDefinitions.ABTestPage(PageDefinitions.java:52)
+at ✽.Verify the presence of "A/B Test Variation 1" in the page(file:///C:/techademy/Selenium/techademy_selenium/techademy_assignment/src/test/resources/features/CapstoneAssignment.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appSetup -->
-        <test-method signature="validate_presence_of_logo()[pri:1, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:00 GMT" name="validate_presence_of_logo" finished-at="2025-02-05T03:25:01 GMT" duration-ms="1339" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" started-at="2025-02-10T04:08:40 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T04:08:46 GMT" duration-ms="5799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Dropdown works fine"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to the given website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_presence_of_logo -->
-        <test-method signature="validate_RequestDemo()[pri:2, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:01 GMT" name="validate_RequestDemo" finished-at="2025-02-05T03:25:01 GMT" duration-ms="137" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" started-at="2025-02-10T04:08:46 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T04:08:49 GMT" duration-ms="3232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Frames works fine"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to the given website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_RequestDemo -->
-        <test-method signature="validate_Products()[pri:3, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:01 GMT" name="validate_Products" finished-at="2025-02-05T03:25:04 GMT" duration-ms="2663" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest@4e3958e7]" started-at="2025-02-10T04:08:49 GMT" name="tearDownClass" finished-at="2025-02-10T04:08:49 GMT" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_Products -->
-        <test-method signature="validate_Solutions()[pri:4, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:04 GMT" name="validate_Solutions" finished-at="2025-02-05T03:25:07 GMT" duration-ms="2507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_Solutions -->
-        <test-method signature="validate_Resources()[pri:5, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:07 GMT" name="validate_Resources" finished-at="2025-02-05T03:25:10 GMT" duration-ms="2898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_Resources -->
-        <test-method signature="validate_Company()[pri:6, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:10 GMT" name="validate_Company" finished-at="2025-02-05T03:25:12 GMT" duration-ms="2479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_Company -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:com.techademy.maven.testng.techademy_assignment.AutomationAnywhere@707194ba]" started-at="2025-02-05T03:25:12 GMT" name="closeUp" finished-at="2025-02-05T03:25:12 GMT" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUp -->
-      </class> <!-- com.techademy.maven.testng.techademy_assignment.AutomationAnywhere -->
-    </test> <!-- Test -->
-  </suite> <!-- Techademy Tests -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.techademy.maven.testng.techademy_assignment.runner.CucumberRunnerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
