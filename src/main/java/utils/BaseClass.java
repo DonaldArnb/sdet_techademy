@@ -10,7 +10,7 @@ public class BaseClass {
  
      private static BaseClass helperClass;
       
-        private static WebDriver driver;
+      public static WebDriver driver;
         public final static int TIMEOUT = 5;
            
           BaseClass() {

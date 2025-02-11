@@ -14,7 +14,6 @@ import org.testng.Assert;
 public class PageDefinitions {
  
     HomePageActions basePage = new HomePageActions();
-    HomePageActions objHomePage = new HomePageActions();
     ABTestingPageActions abtest = new ABTestingPageActions();
     DropDownPageActions dropdown = new DropDownPageActions();
     FramesPageActions frames = new FramesPageActions();
@@ -49,7 +48,10 @@ public class PageDefinitions {
     
     @Then("Verify the presence of {string} in the page")
     public void ABTestPage(String text) {
+        System.out.println("Result is:"+ abtest.PageSource());
+        System.out.println("Expected is:"+ text);
     	Assert.assertTrue(abtest.PageSource().contains(text));
+
     	
     }
     
@@ -76,27 +78,5 @@ public class PageDefinitions {
     	BaseClass.getDriver().navigate().back();
     	
     }
-// 
-//    @Then("User should be able to login successfully and new page open")
-//    public void verifyLogin() {
-// 
-//        // Verify home page
-//        Assert.assertTrue(objHomePage.getHomePageText().contains("Dashboard"));
-// 
-//    }
-// 
-//    @Then("User should be able to see error message {string}")
-//    public void verifyErrorMessage(String expectedErrorMessage) {
-// 
-//        // Verify error message
-//        Assert.assertEquals(objLogin.getErrorMessage(),expectedErrorMessage);
-// 
-//    }
-// 
-//    @Then("User should be able to see a message {string} below Username")
-//    public void verifyMissingUsernameMessage(String message) {
-// 
-//        Assert.assertEquals(objLogin.getMissingUsernameText(),message);
-//    }
-// 
+
 }
