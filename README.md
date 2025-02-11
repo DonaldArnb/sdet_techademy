@@ -1,22 +1,5 @@
-How to run the Test
+Solution to:
+![image](https://github.com/user-attachments/assets/1fa6b38e-56f9-44b1-81ea-ccba178c1074)
 
-Prerequisite
-
-Java environment
-Maven
-TestNG
-
-Note: Configure web-driver path
-
-Project is ready to run. 
-For TestNG, run the testng.xml file as TestNG Suite
-
-For Maven, run the following
-
-Go to project path in terminal
-Run mvn clean
-Run mvn compile
-Run mvn test
-
-
-Reports are generated and added in test-output folder
+Tests added in the below path: src/test/java/com/techademy/maven/testng/techademy_assignment/Capstone_RestAssured.java
+Excel data sheet added in the same directory as TestData.xlsx
